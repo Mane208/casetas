@@ -1,0 +1,42 @@
+<app-header titulo="MENSAJES" align="center"></app-header>
+<ion-content [fullscreen]="true" class="background">
+
+  <div align="center">
+    <img src="\assets\icon\img\m.png" >
+  </div>
+
+  <ion-card>
+    <ion-list lines="none">
+      <ion-item-sliding>
+        <ion-item class="no-padding">  
+          <ion-icon name="close-circle-outline" slot="end" color="danger"></ion-icon>
+          <ion-label class="color">
+            <h2>FECHA</h2>
+            <h2>DOMICILIO</h2>
+            <p>MENSAJE</p>
+          </ion-label>
+        </ion-item>
+        <ion-button color="primary" fill="outline"><img src="\assets\icon\img\mal.png">
+          RESPONDER</ion-button>
+      </ion-item-sliding>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list lines="none">
+      <ion-item-sliding>
+        <ion-item class="no-padding">  
+          <ion-icon name="close-circle-outline" slot="end" color="danger"></ion-icon>
+          <ion-label class="color">          
+            <h2>FECHA</h2>
+            <h2>DOMICILIO</h2>
+            <p>MENSAJE</p>
+          </ion-label>          
+        </ion-item>
+        <ion-button color="primary" fill="outline"><img src="\assets\icon\img\mal.png">
+          RESPONDER</ion-button>
+      </ion-item-sliding>
+    </ion-list>
+  </ion-card>
+
+</ion-content>

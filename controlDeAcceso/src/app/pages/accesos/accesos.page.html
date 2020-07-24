@@ -1,0 +1,61 @@
+<app-header titulo="SALIDAS" align="center"></app-header>
+
+
+<br>
+
+<ion-content [fullscreen]="true" class="background">
+
+
+    <ion-col size="5">
+      <ion-button size="large" expand="block" class="ion-text-wrap" color="primary" type="submit" fill="outline" routerLink="/access"> 
+        <div>
+          <img src="\assets\icon\img\llave.png"> 
+          <br>
+          <label for="">ACCESO</label>
+        </div> 
+      </ion-button>
+      <br>
+      <ion-button size="large" expand="block" class="ion-text-wrap" color="warning" text="fixed" fill="outline">
+        <div>
+          <img src="\assets\icon\img\codigo-qr.png">
+          <br>
+          <label for="">CODIGO QR</label>
+        </div>
+      </ion-button>
+
+      <br>
+      <ion-button routerLink="/proovedores" size="large" expand="block" class="ion-text-wrap" color="warning"
+        fill="outline">
+        <div>
+          <img src="\assets\icon\img\entrega.png">
+          <br>
+          <label for="">PROVEEDOR</label>
+        </div>
+      </ion-button>
+      <br>
+      <ion-button size="large" expand="block" class="ion-text-wrap" color="warning" fill="outline">
+        <div>
+          <img src="\assets\icon\img\senal-de-stop.png">
+          <br>
+          <label for="">SIN ACCESO</label>
+        </div>
+      </ion-button>
+      <br>
+    </ion-col>
+
+    
+
+  <ion-card>
+    <ion-item>
+      <ion-label class="color" position="floating">NOMBRE</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </ion-card>
+
+
+  <ion-button size="medium" expand="block" color="primary" fill="outline">
+    <ion-icon slot="icon-only" name="person-add" color="success"></ion-icon>
+    REGISTRAR
+  </ion-button>
+
+</ion-content>

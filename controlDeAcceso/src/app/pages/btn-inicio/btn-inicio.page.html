@@ -1,0 +1,112 @@
+<ion-header titulo="Menu de opciones">
+  <ion-toolbar color="primary">
+
+
+    <ion-buttons slot="start">
+      <ion-button (click)="toggleMenu()">
+        <ion-icon slot="icon-only" name="menu"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-item color="primary">
+      <ion-avatar slot="end">
+        <img src="\assets\icon\img\log.png">
+      </ion-avatar>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="background">
+
+  
+    <div align="center">
+      <img  class="tio" src="\assets\icon\img\lo2.png" >
+      
+    </div>
+     
+
+<ion-row class="top-4">
+  <ion-col size="6">
+    <ion-button  expand="block" 
+                 class="ion-text-wrap"
+                 routerLink="/alertas"              
+                 fill="outline">
+                <div>
+                  <img src="\assets\icon\img\entrar.png">
+                  <br>
+                  <label for="">ENTRAR</label>
+                </div>
+                </ion-button>
+  </ion-col>
+
+  <ion-col size="6">
+    
+      <ion-button  radius-border="15px"
+                   expand="block" 
+                   routerLink="/accesos" 
+                   class="ion-text-wrap"
+                   fill="outline">
+                   <div>
+                    <img src="\assets\icon\img\cerrar-sesion.png">
+                    <br>
+                    <label for="">SALIR</label>
+                  </div>
+                  </ion-button>    
+       
+</ion-col>
+</ion-row>
+
+
+
+<ion-row class="top-4">
+  <ion-col size="6">
+    <ion-button  
+                 expand="block" 
+                 routerLink="/mensajes" 
+                 fill="outline">
+                 <div>
+                  <img src="\assets\icon\img\mensaje-recibido.png">
+                  <br>
+                  <label for="">MENSAJES</label>
+                </div>
+                </ion-button> 
+  </ion-col>
+
+  <ion-col size="6">
+    <ion-button  
+                 expand="block" 
+                 routerLink="/card"  
+                 class="ion-text-wrap"
+                 fill="outline">
+                 <div>
+                  <img src="\assets\icon\img\pruebas.png">
+                  <br>
+                  <label for="">DIRECTORIO</label>
+                  </div>
+                </ion-button>
+</ion-col>
+</ion-row>
+
+  <ion-button expand="block" 
+              color="success"
+              fill="outline"
+              class="botonesInferiores">
+              <div>
+                <img src="\assets\icon\img\zoom.png">
+                <br>
+                <label for="">BUSCAR</label>
+                </div>
+            </ion-button>
+
+
+  <ion-button expand="block" 
+              color="danger" 
+              href="tel:+911"
+              class="botonesInferiores"
+              fill="outline">
+              <div>
+                <img src="\assets\icon\img\boton-rojo.png">
+                <br>
+                <label for="">SOS</label>
+                </div>
+              </ion-button>
+</ion-content>

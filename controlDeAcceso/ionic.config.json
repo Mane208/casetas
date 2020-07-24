@@ -1,0 +1,7 @@
+{
+  "name": "controlDeAcceso",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

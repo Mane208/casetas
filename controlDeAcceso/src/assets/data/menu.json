@@ -1,0 +1,49 @@
+[
+  {
+    "icon": "apps",
+    "name": "Menu de Opciones",
+    "redirectTo": "/btn-inicio"
+  },
+  {
+    "icon": "enter",
+    "name": "Entradas",
+    "redirectTo": "/alertas"
+  },
+  {
+   "icon": "key",
+   "name": "Salidas",
+   "color": "light",
+   "redirectTo": "/accesos"
+ },
+ {
+   "icon": "book-sharp",
+   "name": "Directorio",
+   "redirectTo": "/card"
+ },
+ {
+   "icon": "pencil",
+   "name": "Registro",
+   "redirectTo": "/datosinput"
+ },
+ {
+   "icon": "close-circle-sharp",
+   "name": "Sin Acceso",
+   "redirectTo": "/noacceso"
+ },
+ {
+   "icon": "cart-sharp",
+   "name": "Proveedores",
+   "redirectTo": "/proovedores"
+ },
+ {
+  "icon": "search-sharp",
+  "name": "Buscar Visitas",
+  "redirectTo": "/buscarvisitas"
+},
+{
+  "icon": "mail",
+  "name": "Mensajes",
+  "redirectTo": "/mensajes"
+}
+     
+ ]

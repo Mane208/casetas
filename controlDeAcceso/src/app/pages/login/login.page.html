@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>LOGIN</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label position="floating">e-mail</ion-label>
+    <ion-input type="email" [(ngModel)]="user.email" required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">password</ion-label>
+    <ion-input type="password" [(ngModel)]="user.password" required></ion-input>
+  </ion-item>
+  <br>
+  
+  
+      <ion-card>
+        <ion-item>
+          <ion-label>Residencial</ion-label>
+          <ion-select interface="action-sheet" class="custom-options" [(ngModel)]="user.fav">
+            <ion-select-option color="primary" value="Andalucia 1">Andalucia 1</ion-select-option>
+            <ion-select-option value="Andalucia 2">Andalucia 2</ion-select-option>
+            <ion-select-option value="Andalucia 3">Andalucia 3</ion-select-option>
+            <ion-select-option value="Andalucia 4">Andalucia 4</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-card> 
+
+  <ion-button class="ion-padding" 
+              color="primary" 
+              expand="full"
+              (click)="login(user)">
+    Login</ion-button>
+
+  <ion-button class="ion-padding" 
+              color="light" 
+              expand="full" 
+              [routerLink]="['/register']">
+    Registrar</ion-button>
+
+
+<br>
+
+</ion-content>
+
