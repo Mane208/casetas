@@ -72,6 +72,22 @@ const routes: Routes = [
   {
     path: 'proveedores-salida',
     loadChildren: () => import('./proveedores-salida/proveedores-salida.module').then( m => m.ProveedoresSalidaPageModule)
+  },
+  {
+    path: 'contacto-administrador',
+    loadChildren: () => import('./contacto-administrador/contacto-administrador.module').then( m => m.ContactoAdministradorPageModule)
+  },
+  {
+    path: 'contacto-presidente',
+    loadChildren: () => import('./contacto-presidente/contacto-presidente.module').then( m => m.ContactoPresidentePageModule)
+  },
+  {
+    path: 'contacto-tesorero',
+    loadChildren: () => import('./contacto-tesorero/contacto-tesorero.module').then( m => m.ContactoTesoreroPageModule)
+  },
+  {
+    path: 'contacto-condominos',
+    loadChildren: () => import('./contacto-condominos/contacto-condominos.module').then( m => m.ContactoCondominosPageModule)
   }
 
 
