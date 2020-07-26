@@ -1,0 +1,79 @@
+<ion-header>  
+  <ion-toolbar color="primary" routerLink="/accesos">
+    <ion-row >
+      <ion-col size="1"> 
+        <ion-icon class="return" name="arrow-back"  ></ion-icon>  </ion-col>
+
+      <ion-col size="9">
+      <p align="center">
+     ACCESOS
+      </p>
+      </ion-col>
+      <ion-col size="2" > 
+        <img class="avatar" src="\assets\icon\img\imagenlogo-Avatar.png">
+      </ion-col>          
+    </ion-row> 
+  </ion-toolbar>
+</ion-header>
+
+<ion-content align="center" class="background">
+  <div id="conte" align="center">
+
+    <br>
+    <ion-item class="items"  color="success">
+      <ion-label>
+        Visitas Programadas
+      </ion-label>
+    </ion-item>
+
+<ion-card align="center" >
+
+        
+      
+<!-- Disabled and readonly textarea in an item with a stacked label 
+<ion-list lines="none">
+      
+        
+
+
+-->
+<ion-item class="no-padding">
+  <ion-label class="color" >
+    <h2>Fecha y Hora</h2>
+    <h2>Tipo de Fecha  (unica/indefinida/fiesta)</h2>
+    <h2 >Clave de Acceso</h2>
+    <h2>Tipo (Empleada Domestica, Visita Unica, Proveedor, Uber..)</h2>
+  </ion-label>
+</ion-item>
+
+
+</ion-card>
+<br>
+<ion-item class="items"  color="primary">
+  <ion-label>
+    Visitas Realizadas
+  </ion-label>
+</ion-item>
+<ion-card >
+
+
+  
+
+
+<ion-item class="no-padding">
+  <ion-label class="color" >
+    <h2>Fecha y Hora de Entrada</h2>
+    <h2>Tipo de Fecha  (unica/indefinida/fiesta)</h2>
+    <h2>Fecha y Hora de Salida</h2>
+    <h2>Placas</h2>
+    <h2>Tipo</h2>
+  </ion-label>
+</ion-item>
+</ion-card>
+<ion-button fill="outline" expand="block" id="r" routerLink="/accesos-registrar-visita" padding  expand="block">REGISTRAR VISITAS</ion-button>
+</div>
+</ion-content>
+
+
+
+

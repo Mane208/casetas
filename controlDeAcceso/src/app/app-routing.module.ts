@@ -65,7 +65,15 @@ const routes: Routes = [
   {
     path: 'access',
     loadChildren: () => import('./access/access.module').then( m => m.AccessPageModule)
+  },  {
+    path: 'salidas',
+    loadChildren: () => import('./salidas/salidas.module').then( m => m.SalidasPageModule)
+  },
+  {
+    path: 'proveedores-salida',
+    loadChildren: () => import('./proveedores-salida/proveedores-salida.module').then( m => m.ProveedoresSalidaPageModule)
   }
+
 
   
 ];
