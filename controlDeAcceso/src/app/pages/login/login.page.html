@@ -4,15 +4,15 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="background">
 
   <ion-item>
-    <ion-label position="floating">e-mail</ion-label>
+    <ion-label class="color" position="floating">e-mail</ion-label>
     <ion-input type="email" [(ngModel)]="user.email" required></ion-input>
   </ion-item>
 
   <ion-item>
-    <ion-label position="floating">password</ion-label>
+    <ion-label class="color" position="floating">password</ion-label>
     <ion-input type="password" [(ngModel)]="user.password" required></ion-input>
   </ion-item>
   <br>
@@ -20,7 +20,7 @@
   
       <ion-card>
         <ion-item>
-          <ion-label>Residencial</ion-label>
+          <ion-label class="color">Residencial</ion-label>
           <ion-select interface="action-sheet" class="custom-options" [(ngModel)]="user.fav">
             <ion-select-option color="primary" value="Andalucia 1">Andalucia 1</ion-select-option>
             <ion-select-option value="Andalucia 2">Andalucia 2</ion-select-option>

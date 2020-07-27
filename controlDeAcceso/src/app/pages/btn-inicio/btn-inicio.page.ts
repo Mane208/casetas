@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuController } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-btn-inicio',
@@ -8,12 +8,9 @@ import { MenuController } from '@ionic/angular';
 })
 export class BtnInicioPage implements OnInit {
 
-  constructor(private menuCtrl: MenuController) { }
+  constructor() { }
 
   ngOnInit() {
   }
-  toggleMenu(){
-    this.menuCtrl.toggle();
-
-  }
+  
 }
