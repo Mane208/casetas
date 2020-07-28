@@ -65,7 +65,8 @@ const routes: Routes = [
   {
     path: 'access',
     loadChildren: () => import('./access/access.module').then( m => m.AccessPageModule)
-  },  {
+  },
+  {
     path: 'salidas',
     loadChildren: () => import('./salidas/salidas.module').then( m => m.SalidasPageModule)
   },
@@ -80,10 +81,6 @@ const routes: Routes = [
   {
     path: 'contacto-presidente',
     loadChildren: () => import('./contacto-presidente/contacto-presidente.module').then( m => m.ContactoPresidentePageModule)
-  },
-  {
-    path: 'contacto-tesorero',
-    loadChildren: () => import('./contacto-tesorero/contacto-tesorero.module').then( m => m.ContactoTesoreroPageModule)
   },
   {
     path: 'contacto-condominos',
