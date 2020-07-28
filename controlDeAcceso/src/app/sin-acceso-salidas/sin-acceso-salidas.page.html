@@ -1,0 +1,68 @@
+<ion-header>  
+  <ion-toolbar color="primary" routerLink="/accesos">
+    <ion-row >
+      <ion-col size="1"> 
+        <ion-icon class="return" name="arrow-back"  ></ion-icon>  </ion-col>
+      <ion-col size="9">
+      <p align="center">
+        SALIDAS
+      </p>
+      </ion-col>
+      <ion-col size="2" > 
+        <img class="avatar" src="\assets\icon\img\imagenlogo-Avatar.png">
+      </ion-col>          
+    </ion-row> 
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true" class="background">
+
+  
+    <img class="imagen" src="\assets\icon\img\senal-de-stop.png" >                                            
+
+    
+
+    
+   
+  <ion-list>
+    <ion-card>
+    <ion-item>
+      <ion-label class="color" position="floating">NOMBRE</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label class="color" position="floating">DOMICILIO</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label class="color" position="floating">TIPO DE ACCESO</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label class="color" position="floating">PLACAS</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label class="color" position="floating">OBSERVACIONES</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="color" position="floating">MODO DE INGRESO</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  
+ </ion-card>
+  </ion-list>
+  
+  <ion-button expand="block" 
+              color="primary"
+              fill="outline"><ion-icon slot="icon-only" name="person-add" color="success"></ion-icon>
+              REGISTRAR</ion-button>
+
+
+
+</ion-content>

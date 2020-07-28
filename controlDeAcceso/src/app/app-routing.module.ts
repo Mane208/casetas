@@ -88,6 +88,18 @@ const routes: Routes = [
   },  {
     path: 'sos',
     loadChildren: () => import('./sos/sos.module').then( m => m.SosPageModule)
+  },
+  {
+    path: 'sin-acceso-salidas',
+    loadChildren: () => import('./sin-acceso-salidas/sin-acceso-salidas.module').then( m => m.SinAccesoSalidasPageModule)
+  },
+  {
+    path: 'buscar-principal',
+    loadChildren: () => import('./buscar-principal/buscar-principal.module').then( m => m.BuscarPrincipalPageModule)
+  },
+  {
+    path: 'buscar-visita',
+    loadChildren: () => import('./buscar-visita/buscar-visita.module').then( m => m.BuscarVisitaPageModule)
   }
 
 

@@ -1,0 +1,40 @@
+
+<ion-header>
+  <ion-toolbar class="ion-text-center" color="primary" routerLink="/buscar-principal">
+    <ion-row>
+      <ion-col size="2">
+        <ion-icon class="return" name="arrow-back"></ion-icon>
+      </ion-col>
+
+      <ion-col size="8">
+
+        Reusltado 
+
+      </ion-col>
+      <ion-col size="2">
+        <img class="avatar" src="\assets\icon\img\imagenlogo-Avatar.png">
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="background">
+
+
+
+ <ion-card mode="ios">
+
+    <ion-item>
+      <ion-icon slot="start" name="person-sharp" color="light"></ion-icon>
+      <ion-card-title class="color">Nombre.Visita</ion-card-title>
+    </ion-item>
+  
+    <ion-card-content>
+      <ion-label class="color" > visita.nombre</ion-label>
+      <br>
+      <ion-label class="color" >registro.Direccion</ion-label>
+      <br>
+      <ion-label class="color" >registro.TipoVisita</ion-label>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
