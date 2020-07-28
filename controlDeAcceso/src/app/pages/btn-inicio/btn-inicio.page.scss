@@ -7,7 +7,7 @@ ion-label{
     color: #f4f5f8;
 }
 ion-content.background{
-    --ion-background-color: #030218;
+    --ion-background-color: #000000;
 }
 
 ion-button{
@@ -41,3 +41,34 @@ img{
     padding-right: 5px;
     padding-top: 2px;
 }
+
+ion-button.bord{
+    height:70px;
+   //width: 130px;
+   text-overflow: 25px;
+   border-radius: 10px;
+   border: 6px inset rgb(0, 183, 255);
+   --background: transparent;
+   
+  
+}
+
+#grad {
+    height: 100px;
+    background-image: linear-gradient(rgb(0, 162, 255), black);
+    text-align: center;
+    font-size: 30px;
+  }
+  #grado {
+    height: 105px;    
+    background-image: linear-gradient(rgb(0, 119, 255), black);
+  
+  }
+  #grados {    
+    background-image: linear-gradient(rgb(0, 119, 255), black);
+  
+  }
+
+  ion-label.color{
+      color: whitesmoke;
+  }
