@@ -85,7 +85,11 @@ const routes: Routes = [
   {
     path: 'contacto-condominos',
     loadChildren: () => import('./contacto-condominos/contacto-condominos.module').then( m => m.ContactoCondominosPageModule)
+  },  {
+    path: 'sos',
+    loadChildren: () => import('./sos/sos.module').then( m => m.SosPageModule)
   }
+
 
 
   
