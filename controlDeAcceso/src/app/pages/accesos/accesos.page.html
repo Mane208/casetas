@@ -17,15 +17,13 @@
   </ion-toolbar>
 </ion-header>
 
-
 <br>
 
 <ion-content [fullscreen]="true" class="background">
 
 <ion-card id="conte" color="black"> 
     <ion-col  size="5"> 
-      <ion-button size="large" expand="block" 
-      class="ion-text-wrap" color="primary" type="submit" fill="outline" routerLink="/salidas"> 
+      <ion-button size="large" expand="block" type="submit" routerLink="/salidas"> 
         <div>
           <img src="\assets\icon\img\llave.png"> 
           <br>
@@ -33,8 +31,8 @@
         </div> 
       </ion-button>
       <br>
-      <ion-button size="large" expand="block" class="ion-text-wrap" 
-      color="success" text="fixed" fill="outline">
+      <ion-button id="verde" size="large" expand="block" class="verde" 
+      text="fixed"  (click)="scan()">
         <div>
           <img src="\assets\icon\img\codigo-qr.png">
           <br>
@@ -43,9 +41,7 @@
       </ion-button>
 
       <br>
-      <ion-button routerLink="/proveedores-salida" size="large" expand="block"
-       class="ion-text-wrap" color="primary"
-        fill="outline">
+      <ion-button routerLink="/proveedores-salida"  size="large" expand="block" type="submit">
         <div>
           <img src="\assets\icon\img\entrega.png">
           <br>
@@ -53,8 +49,8 @@
         </div>
       </ion-button>
       <br>
-      <ion-button routerLink="/sin-acceso-salidas" size="large" expand="block" class="ion-text-wrap" 
-      color="success" fill="outline">
+      <ion-button routerLink="/sin-acceso-salidas" id="verde" size="large" expand="block" class="verde" 
+      text="fixed"  (click)="scan()">
         <div>
           <img src="\assets\icon\img\senal-de-stop.png">
           <br>

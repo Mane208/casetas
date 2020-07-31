@@ -81,7 +81,7 @@
   
   ion-toolbar{
     color: whitesmoke;
-    font-size: 35px;
+    font-size: 20px;
   }
   
   .return{
@@ -96,3 +96,17 @@
   .avatar{
     width: 100%;
   }
+
+  #verde{
+    border: 6px double rgb(0, 255, 149);
+  }
+
+  ion-button{
+    height: 85px;
+    font-size: medium;
+    border: 6px double rgb(0, 183, 255) ;
+    --background: transparent;
+    border-radius: 10px;
+    padding-right: 120px;
+    padding-left: 120px;
+}
