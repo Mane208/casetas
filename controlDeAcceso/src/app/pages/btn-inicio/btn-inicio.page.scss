@@ -29,7 +29,7 @@ ion-button.text{
 }
 
 img{
-    width: 45px;
+    width: 35px;
 }
 
 .tio{
@@ -72,3 +72,15 @@ ion-button.bord{
   ion-label.color{
       color: whitesmoke;
   }
+
+  ion-button.bordo{
+      height: 70px;
+      text-overflow: 15px;
+      border: 6px inset rgb(0, 183, 255);
+      --background: transparent;
+      border-radius: 15px;
+  }
+
+  img{
+    width: 35px;
+}

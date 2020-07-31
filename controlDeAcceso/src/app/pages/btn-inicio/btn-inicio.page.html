@@ -1,20 +1,7 @@
-<!-- <ion-header titulo="Menu de opciones">
-  <ion-toolbar color="primary">
-
-
-    
-    <ion-item color="primary">
-      <ion-avatar slot="end">
-        <img src="\assets\icon\img\log.png">
-      </ion-avatar>
-    </ion-item>
-  </ion-toolbar> 
-</ion-header> -->
-<ion-header >
-  <ion-toolbar  >
-    <ion-icon id="grad" slot="end" name="power-sharp"  size="large" color="light" routerLink="/login"></ion-icon>
-    <ion-title id="grad" color="light">Caseta</ion-title>
-
+<ion-header [translucent]="true">
+  <ion-toolbar id="grad" mode="ios">
+    <ion-icon id="grad" slot="end" name="power-sharp"  size="large"  style="color: rgb(255, 255, 255);" routerLink="/login"></ion-icon>
+    <ion-title id="grad"  style="color: rgb(255, 255, 255);">ADMINISTRADOR</ion-title>
   </ion-toolbar>
 </ion-header>
  
@@ -30,9 +17,9 @@
 <ion-row class="top-4">
   <ion-col size="6">
     <ion-button  expand="block" 
-                 class="ion-text-wrap"
+                 class="bordo"
                  routerLink="/alertas"              
-                 fill="outline">
+                 >
                 <div>
                   <img src="\assets\icon\img\entrar.png">
                   <br>
@@ -43,11 +30,10 @@
 
   <ion-col size="6">
     
-      <ion-button  radius-border="15px"
+      <ion-button class="bordo"
                    expand="block" 
                    routerLink="/accesos" 
-                   class="ion-text-wrap"
-                   fill="outline">
+                   >
                    <div>
                     <img src="\assets\icon\img\cerrar-sesion.png">
                     <br>
@@ -62,10 +48,10 @@
 
 <ion-row class="top-4">
   <ion-col size="6">
-    <ion-button  
+    <ion-button  class="bordo"
                  expand="block" 
                  routerLink="/mensajes" 
-                 fill="outline">
+                 >
                  <div>
                   <img src="\assets\icon\img\mensaje-recibido.png">
                   <br>
@@ -78,8 +64,7 @@
     <ion-button  
                  expand="block" 
                  routerLink="/card"  
-                 class="ion-text-wrap"
-                 fill="outline">
+                 class="bordo">
                  <div>
                   <img src="\assets\icon\img\pruebas.png">
                   <br>
@@ -91,9 +76,7 @@
 
   <ion-button expand="block" 
               routerLink="/buscar-principal"
-              color="success"
-              fill="outline"
-              class="botonesInferiores">
+              class="bordo">
               <div>
                 <img src="\assets\icon\img\zoom.png">
                 <br>
@@ -102,11 +85,9 @@
             </ion-button>
 
 
-  <ion-button expand="block" 
-              color="danger" 
+  <ion-button expand="block"                
               routerLink="/sos" 
-              class="botonesInferiores"
-              fill="outline">
+              class="bordo">
               <div>
                 <img src="\assets\icon\img\boton-rojo.png">
                 <br>

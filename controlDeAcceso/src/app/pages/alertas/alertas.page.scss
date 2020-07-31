@@ -8,10 +8,18 @@ img{
 
 ion-button{
     height: 85px;
-    padding-right: 30px;
-    padding-left: 30px;
+    font-size: medium;
+    border: 6px double rgb(0, 183, 255) ;
+    --background: transparent;
+    border-radius: 10px;
+    padding-right: 120px;
+    padding-left: 120px;
 }
+
+#verde{border: 6px double rgb(0, 255, 149);}
 
 .return{
     font-size: 35px;
 }
+
+

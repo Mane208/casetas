@@ -21,11 +21,11 @@
     <h1 text-capitalize></h1>
 
 
-
+<ion-card id="id">
 
 
         <ion-col size="5">
-            <ion-button size="large" expand="block" class="ion-text-wrap" color="primary" type="submit" fill="outline" routerLink="/access">
+            <ion-button size="large" expand="block" class="ion-text-wrap"  type="submit" routerLink="/access">
                 <div>
                     <img src="\assets\icon\img\llave.png">
                     <br>
@@ -33,9 +33,9 @@
                 </div>
             </ion-button>
             <br>
-            <ion-button  size="large" expand="block" class="ion-text-wrap" color="warning"
-                text="fixed" fill="outline" (click)="scan()"
-                color="success">
+            <ion-button id="verde" size="large" expand="block" class="ion-text-wrap" 
+                text="fixed"  (click)="scan()"
+                >
                 <div>
                     <img src="\assets\icon\img\codigo-qr.png">
                     <br>
@@ -43,9 +43,8 @@
                 </div>
             </ion-button>
             <br>
-            <ion-button routerLink="/proovedores" size="large" expand="block" class="ion-text-wrap" color="warning"
-                fill="outline"
-                color="primary">
+            <ion-button routerLink="/proovedores" size="large" expand="block"  
+                >
                 <div>
                     <img src="\assets\icon\img\entrega.png">
                     <br>
@@ -53,9 +52,8 @@
                 </div>
             </ion-button>            
             <br>
-            <ion-button routerLink="/noacceso" size="large" expand="block" class="ion-text-wrap" color="warning"
-                fill="outline"
-                color="success">
+            <ion-button routerLink="/noacceso" size="large" expand="block" 
+              id="verde">
                 <div>
                     <img src="\assets\icon\img\senal-de-stop.png">
                     <br>
@@ -63,9 +61,9 @@
                 </div>
             </ion-button>
             <br>
-            <ion-button routerLink="/buscarvisitas" size="large" expand="block" class="ion-text-end" color="warning"
-                fill="outline"
-                color="primary">
+            <ion-button routerLink="/buscarvisitas" size="large" expand="block"
+                
+                >
                 <div>
                     <img src="\assets\icon\img\zoom.png">
                     <br>
@@ -73,4 +71,5 @@
                 </div>
             </ion-button>
         </ion-col>
+    </ion-card>
 </ion-content>
