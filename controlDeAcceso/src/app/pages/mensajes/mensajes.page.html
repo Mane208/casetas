@@ -1,19 +1,9 @@
 <ion-header>
   <ion-toolbar class="ion-text-center" color="primary">
-    <ion-row>
-      <ion-col size="1">
-        <ion-icon class="return" name="arrow-back" routerLink="/btn-inicio"></ion-icon>
-      </ion-col>
-
-      <ion-col size="9">
+    <img routerLink="/btn-inicio" slot="end" class="avatar" src="\assets\icon\img\imagenlogo-Avatar.png">
+    <ion-icon slot="start" size="large"name="arrow-back"routerLink="/btn-inicio"></ion-icon>
 
         MENSAJES 
-
-      </ion-col>
-      <ion-col size="2">
-        <img routerLink="/btn-inicio" class="avatar" src="\assets\icon\img\imagenlogo-Avatar.png">
-      </ion-col>
-    </ion-row>
   </ion-toolbar>
 </ion-header><ion-content [fullscreen]="true" class="background">
 

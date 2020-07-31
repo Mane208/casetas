@@ -17,6 +17,7 @@ import { environment} from "src/environments/environment";
 import { AngularFirestoreModule} from "@angular/fire/firestore";
 
 import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 
 
@@ -31,7 +32,8 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
     AngularFireAuthModule,
     AngularFirestoreModule,
     ComponentsModule,
-    HttpClientModule
+    HttpClientModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
     
   ],
   providers: [
