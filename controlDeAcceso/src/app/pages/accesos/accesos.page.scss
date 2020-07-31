@@ -3,7 +3,7 @@
   #conte{
     height: auto;
    padding: 0%;
-    transform: translateY(20%);
+   // transform: translateY(20%);
   }
   
   ion-item , ino-textarea {
@@ -25,7 +25,7 @@
   
   ion-card{
     margin: 0 auto;
-    transform: translateY(5px);
+    //transform: translateY(5px);
     padding-block-end: 5px;
     width: 90%;
     border-radius: 5px;
@@ -97,16 +97,17 @@
     width: 100%;
   }
 
-  #verde{
-    border: 6px double rgb(0, 255, 149);
-  }
-
   ion-button{
+
     height: 85px;
-    font-size: medium;
+    
     border: 6px double rgb(0, 183, 255) ;
     --background: transparent;
     border-radius: 10px;
-    padding-right: 120px;
-    padding-left: 120px;
+    padding-right: 90px;
+    padding-left: 90px;
+    text-align: wrap;
+    font-size: 15px;
 }
+
+#verde{border: 6px double rgb(0, 255, 149);}
