@@ -73,12 +73,17 @@ ion-button.bord{
       color: whitesmoke;
   }
 
-  ion-button.bordo{
+  ion-button{
       height: 70px;
       text-overflow: 15px;
       border: 6px inset rgb(0, 183, 255);
       --background: transparent;
       border-radius: 15px;
+  }
+
+  .red{
+    border: 6px inset red;
+
   }
 
   img{
