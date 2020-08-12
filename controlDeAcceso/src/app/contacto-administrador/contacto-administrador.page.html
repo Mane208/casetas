@@ -1,27 +1,23 @@
-
 <ion-header>
-  <ion-toolbar class="ion-text-center" color="primary" >
-    <img routerLink="btn-inicio" slot="end" class="avatar" src="\assets\icon\img\imagenlogo-Avatar.png">
+  <ion-toolbar class="ion-text-center" color="primary"  > 
+    <img routerLink="/btn-inicio" slot="end" class="avatar" src="\assets\icon\img\imagenlogo-Avatar.png">
     <ion-icon slot="start" size="large"name="arrow-back"routerLink="/card"></ion-icon>
 
-        DIRECTORIO 
+        MESA DIRECTIVA
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="background">
-
-
-
- <ion-card mode="ios">
-
-    <ion-item>
-      <ion-icon slot="start" name="person-sharp" color="light"></ion-icon>
-      <ion-card-title class="color">Administrador</ion-card-title>
-    </ion-item>
+<ion-content class="background">
+  <!-- List of Text Items -->
   
-    <ion-card-content>
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods.
-    </ion-card-content>
+  <ion-card>
+    <ion-list lines ="none">
+      
+      <ion-item   [routerLink]="['/infocontacto3', post.id]" *ngFor="let post of vista " >
+        <ion-label  class="color"> {{post.nombre}} </ion-label>
+      </ion-item>
+  </ion-list>
+  
   </ion-card>
-</ion-content>
+  
+  </ion-content>

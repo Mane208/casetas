@@ -3,20 +3,23 @@
     <img routerLink="/btn-inicio" slot="end" class="avatar" src="\assets\icon\img\imagenlogo-Avatar.png">
     <ion-icon slot="start" size="large"name="arrow-back"routerLink="/card"></ion-icon>
 
-        DIRECTORIO 
+    
+    DIRECTORIO CONDOMINOS
   </ion-toolbar>
-</ion-header>
-<ion-content [fullscreen]="true" class="background">
-<ion-card mode="ios">
-  <ion-item>
-    <ion-icon slot="start" name="person-sharp" color="light"></ion-icon>
-    <ion-card-title class="color">Condominos</ion-card-title>
-  </ion-item>
 
-  <ion-card-content class="background">
-    Keep close to Nature's heart... and break clear away, once in awhile,
-    and climb a mountain or spend a week in the woods. Wash your spirit clean.
-  </ion-card-content>
+</ion-header>
+
+<ion-content class="background">
+<!-- List of Text Items -->
+
+<ion-card>
+  <ion-list lines ="none">
+    
+    <ion-item   [routerLink]="['/infocontacto', post.id]" *ngFor="let post of vista " >
+      <ion-label  class="color"> {{post.nombre}} </ion-label>
+    </ion-item>
+</ion-list>
+
 </ion-card>
 
 </ion-content>

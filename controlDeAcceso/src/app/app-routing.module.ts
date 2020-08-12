@@ -74,10 +74,7 @@ const routes: Routes = [
     path: 'proveedores-salida',
     loadChildren: () => import('./proveedores-salida/proveedores-salida.module').then( m => m.ProveedoresSalidaPageModule)
   },
-  {
-    path: 'contacto-administrador',
-    loadChildren: () => import('./contacto-administrador/contacto-administrador.module').then( m => m.ContactoAdministradorPageModule)
-  },
+  
   {
     path: 'contacto-presidente',
     loadChildren: () => import('./contacto-presidente/contacto-presidente.module').then( m => m.ContactoPresidentePageModule)
@@ -85,7 +82,8 @@ const routes: Routes = [
   {
     path: 'contacto-condominos',
     loadChildren: () => import('./contacto-condominos/contacto-condominos.module').then( m => m.ContactoCondominosPageModule)
-  },  {
+  },
+  {
     path: 'sos',
     loadChildren: () => import('./sos/sos.module').then( m => m.SosPageModule)
   },
@@ -100,7 +98,20 @@ const routes: Routes = [
   {
     path: 'buscar-visita',
     loadChildren: () => import('./buscar-visita/buscar-visita.module').then( m => m.BuscarVisitaPageModule)
+  },
+  {
+    path: 'infocontacto/:id',
+    loadChildren: () => import('./infocontacto/infocontacto.module').then( m => m.InfocontactoPageModule)
+  },
+  {
+    path: 'contacto-administrador',
+    loadChildren: () => import('./contacto-administrador/contacto-administrador.module').then( m => m.ContactoAdministradorPageModule)
+  },
+  {
+    path: 'infopres/:id',
+    loadChildren: () => import('./infopres/infopres.module').then( m => m.InfopresPageModule)
   }
+
 
 
 
