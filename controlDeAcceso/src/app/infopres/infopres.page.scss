@@ -1,24 +1,43 @@
-ion-content.background{
-    --ion-background-color: #16171a;
+ion-icon {
+    align-content: right;
+    font-size: 300%;
+    color: blue;
+  }
+
+  #iconflecha{
+    align-content: right;
+    font-size: 20px;
+    color: gray;
   }
 
   ion-label.color{
     color: whitesmoke;
   }
-
-  ion-card-title{
+  ion-item{
     color: whitesmoke;
+  }
+
+  .avatar{
+    width: 10%;
   }
 
   .return{
     color: whitesmoke;
-    font-size: 35px;
+  }
+  ion-content.background{
+    --ion-background-color: #16171a;
   }
 
-  ion-toolbar{    
-    font-size: 20px;
+  ion-toolbar{
+ 
+    font-size: 25px;
+  }
+  
+  .return{
+    color: whitesmoke;
+    font-size: 25px;
   }
 
-  img{
-      font-size: 1px;
-  }
+  .color{
+    color: whitesmoke;
+}
