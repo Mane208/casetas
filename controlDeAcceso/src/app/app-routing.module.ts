@@ -110,7 +110,12 @@ const routes: Routes = [
   {
     path: 'infopres/:id',
     loadChildren: () => import('./infopres/infopres.module').then( m => m.InfopresPageModule)
+  },
+  {
+    path: 'infoadmin/:id',
+    loadChildren: () => import('./infoadmin/infoadmin.module').then( m => m.InfoadminPageModule)
   }
+
 
 
 

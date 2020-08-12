@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar class="ion-text-center" color="primary"  > 
+    <img routerLink="/btn-inicio" slot="end" class="avatar" src="\assets\icon\img\imagenlogo-Avatar.png">
+    <ion-icon class="color" slot="start" size="large"name="arrow-back"routerLink="/card"></ion-icon>
+
+    <ion-title>INFORMACION</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content  class="background">
+  <!-- List of Text Items -->
+  
+  <ion-card>
+ 
+      
+    <ion-item  >
+      <ion-label class="color">
+      <h2 >{{post.nombre}}</h2>
+      <h2>{{post.direccion}}</h2>
+      <h2>{{post.telefono}}</h2>
+      <h2>{{post.tipo}}</h2>
+                
+              </ion-label>
+      
+    </ion-item>
+
+  </ion-card>
+  
+  </ion-content>
