@@ -4,3 +4,67 @@ ion-content.background{
 .return{
     font-size: 35px;
 }
+
+ion-content.background{
+  --ion-background-color: #030218;
+}
+
+
+#d{
+  height: auto;
+}
+  
+#conte{
+  height: auto;
+  padding-top: 20px ;     
+  margin: 0 auto;
+  transform: translateY(5px);
+  padding-block-end: 20px;
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid #0be9b1;
+}
+
+ 
+#conteazul{
+  height: auto;
+  padding-top: 20px ;     
+  margin: 0 auto;
+  transform: translateY(5px);
+  padding-block-end: 20px;
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid #0b73e9;
+}
+  
+ion-label.color{
+  color: whitesmoke;
+}
+ion-input{
+  color: whitesmoke;
+}
+
+#conte1{
+  height: 30%;
+  width: 90%;
+}
+
+
+
+#text{
+  color: white;
+  font-weight: bold;
+}
+
+
+ion-icon {
+  align-content: right;
+  font-size: 300%;
+}
+
+ion-content.background{
+  --ion-background-color: #16171a;
+}
+
+
+

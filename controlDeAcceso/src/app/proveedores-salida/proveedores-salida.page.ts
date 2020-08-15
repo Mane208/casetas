@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { LoadingController, ToastController } from '@ionic/angular';
+import { LoadingController, ToastController, NavController } from '@ionic/angular';
 import { AngularFirestore } from '@angular/fire/firestore';
+import {Registro} from '../pages/models/proveedores.model'
 
 @Component({
   selector: 'app-proveedores-salida',
@@ -8,63 +9,60 @@ import { AngularFirestore } from '@angular/fire/firestore';
   styleUrls: ['./proveedores-salida.page.scss'],
 })
 export class ProveedoresSalidaPage {
-
-  registro : any;
-  constructor( private loadingCtrl: LoadingController,
-                private firestore: AngularFirestore,
-                private ToastCtrl: ToastController) { }
-
-ionViewWillEnter(){
-  this.getPost();
-}
-
-async getPost(){
-  let loader = await this.loadingCtrl.create({
-    message: "Espera un momento... "
-  });
-
-  loader.present();
-  try {
-    this.firestore
-    .collection ("proveedor")
-    .snapshotChanges ()
-    .subscribe (data => {
-      this.registro = data.map(e => {
-      return {
-        id: e.payload.doc.id,
-        nombre: e.payload.doc.data()["nombre"],
-        direccion: e.payload.doc.data()["direccion"],
-        telefono: e.payload.doc.data()["telefono"],
-        tipo: e.payload.doc.data()["tipo"]
-
-      };
-    });
-
-    loader.dismiss();
-    });
-   } catch (e) {
-    this.showToast(e);
-
-  }
-}
-
-async deletePost(id: string) {
-  //loading
-  let loader = this.loadingCtrl.create({
-    message: "deleting...."
-  });
-  (await loader).present();
-
-  await this.firestore.doc("proveedor/" + id).delete();
-
-  (await loader).dismiss();
-}
+  post = {} as Registro;
  
-showToast (message:string){
-  this.ToastCtrl.create({
-    message: message, 
-    duration: 3000
-  })
-  .then( ToastData => ToastData.present());
+  constructor(private toastCtrl: ToastController,
+    private loadingCtrl: LoadingController,
+    private navCtrl: NavController,
+    private firestore: AngularFirestore
+    ) { }
+
+async createPostProveedores(post: Registro){
+if(this.formValidationProveedores()){
+let loader = this.loadingCtrl.create({
+message: "Registrando Cuenta..."
+});
+(await loader).present();
+
+try {
+await this.firestore.collection("sinaccesosproveedores").add(post);
+} catch (e) {
+this.showToast(e);
+}
+//cerrar loading
+(await loader).dismiss();
+
+//redirigir a home
+
+this.navCtrl.navigateRoot("/proveedores-salida");
+
+
+}
+}
+formValidationProveedores(){
+  if(!this.post.nombre){
+    this.showToast("Porfavor Ingresa nombre");
+    return false;
+    }      
+    if(!this.post.direccion){
+    this.showToast("Porfavor Ingresa direccion");
+    return false;
+    }
+    if(!this.post.telefono){
+    this.showToast("Porfavor Ingresa N° tarjeta");
+    return false;
+    }
+    
+    
+return true;
+}
+
+showToast(message: string){
+this.toastCtrl.create({
+message: message,
+duration: 3000
+})
+.then(toastData => toastData.present());
+
 }
 }

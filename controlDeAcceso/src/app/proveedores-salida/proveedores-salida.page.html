@@ -17,57 +17,40 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" class="background">
-
-    
   <br>
   <br>
+    <div id="conte"align="center">
   
-  <ion-card>
-    <ion-list lines="none">
-      <ion-item-sliding  *ngFor="let post of registro ">
-        <ion-item class="no-padding">  
-          <ion-icon name="add-circle-sharp" slot="end" color="success"></ion-icon>
-          <ion-label color="light">
-            <h2>{{post.nombre}}</h2>
-            <p> <ion-icon name="navigate-circle" slot="start"></ion-icon> {{post.direccion}}</p>
-            <h2>{{post.telefono}}</h2>
-            <h2>{{post.tipo}}</h2>
-          </ion-label>
+      <h1 id="text">Registro </h1>
+  
+      <div id="conte1" align="center">
+  
+        <ion-item >
+          <ion-label class="color" position="floating">Nombre</ion-label>
+          <ion-input [(ngModel)]= "post.nombre"></ion-input>
         </ion-item>
-      </ion-item-sliding>
-    </ion-list>
-  </ion-card>
-<!--   
-  <ion-card>
-    <ion-list lines="none">
-      <ion-item-sliding>
-        <ion-item class="no-padding">  
-          <ion-icon name="add-circle-sharp" slot="end" color="success"></ion-icon>
-          <ion-label color="light">          
-            <h2> GAS NOEL </h2>
-            <p> <ion-icon name="navigate-circle" slot="start"></ion-icon> DOMICILIO</p>
-          </ion-label>
+        
+        <ion-item>
+          <ion-label class="color" position="floating">Domicilio</ion-label>
+          <ion-input [(ngModel)]= "post.direccion" ></ion-input>
         </ion-item>
-      </ion-item-sliding>
-    </ion-list>
-  </ion-card>
   
-  
-  <ion-card>
-    <ion-list lines="none">
-      <ion-item-sliding>
-        <ion-item class="no-padding">  
-          <ion-icon name="add-circle-sharp" slot="end" color="success"></ion-icon>
-          <ion-label color="light">
-            <h2>LIVERPOOL</h2>
-            <p> <ion-icon name="navigate-circle" slot="start"></ion-icon> DOMICILIO</p>
-          </ion-label>
+        <ion-item >
+          <ion-label class="color" position="floating">Teléfono</ion-label>
+          <ion-input [(ngModel)]= "post.telefono"></ion-input>
         </ion-item>
-      </ion-item-sliding>
-    </ion-list>
-  </ion-card> -->
+        <br>
+        <!--  -->
+        
+        <!--  -->
+        <ion-button (click)=" createPostProveedores(post)" expand="block" fill="outline" class="color" position="floating">Agregar</ion-button>
+  
+       
+      </div>    
+    </div>  
+   <br>
+   
+   
+    </ion-content>
   
   
-  
-  </ion-content>
-

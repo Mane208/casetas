@@ -27,32 +27,32 @@
     <ion-card>
     <ion-item>
       <ion-label class="color" position="floating">NOMBRE</ion-label>
-      <ion-input></ion-input>
+      <ion-input [(ngModel)]="post.nombre"></ion-input>
     </ion-item>
   
     <ion-item>
       <ion-label class="color" position="floating">DOMICILIO</ion-label>
-      <ion-input></ion-input>
+      <ion-input [(ngModel)]="post.domicilio"></ion-input>
     </ion-item>
   
     <ion-item>
       <ion-label class="color" position="floating">TIPO DE ACCESO</ion-label>
-      <ion-input></ion-input>
+      <ion-input [(ngModel)]="post.tipoacceso"></ion-input>
     </ion-item>
   
     <ion-item>
       <ion-label class="color" position="floating">PLACAS</ion-label>
-      <ion-input></ion-input>
+      <ion-input [(ngModel)]="post.placas"></ion-input>
     </ion-item>
   
     <ion-item>
       <ion-label class="color" position="floating">OBSERVACIONES</ion-label>
-      <ion-input></ion-input>
+      <ion-input [(ngModel)]="post.obcesrvaciones"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label class="color" position="floating">MODO DE INGRESO</ion-label>
-      <ion-input></ion-input>
+      <ion-input [(ngModel)]="post.modoingreso"></ion-input>
     </ion-item>
   
  </ion-card>
@@ -60,7 +60,9 @@
   
   <ion-button expand="block" 
               color="primary"
-              fill="outline"><ion-icon slot="icon-only" name="person-add" color="success"></ion-icon>
+              fill="outline"
+              (click)="createPostSalidas(post)"><ion-icon slot="icon-only" name="person-add" color="success"></ion-icon>
+              
               REGISTRAR</ion-button>
 
 
