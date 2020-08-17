@@ -5,4 +5,6 @@ export interface Salidas {
     placas: string;
     obcesrvaciones : string; 
     modoingreso : string;
+
+
 }
