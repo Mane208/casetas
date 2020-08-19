@@ -8,8 +8,11 @@ import { BuscarPrincipalPageRoutingModule } from './buscar-principal-routing.mod
 
 import { BuscarPrincipalPage } from './buscar-principal.page';
 
+import { PipesModule } from '../pipes/pipes.module';
+
 @NgModule({
   imports: [
+    PipesModule,
     CommonModule,
     FormsModule,
     IonicModule,

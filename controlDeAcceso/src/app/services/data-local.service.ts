@@ -8,6 +8,8 @@ export class DataLocalService {
 
   guardados: Registro[] = [];
 
+ 
+
 
  
   constructor() { }
@@ -18,6 +20,8 @@ export class DataLocalService {
 
       console.log(this.guardados);
   }
+
+ 
  
 
 }
