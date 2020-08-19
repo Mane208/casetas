@@ -114,7 +114,20 @@ const routes: Routes = [
   {
     path: 'infoadmin/:id',
     loadChildren: () => import('./infoadmin/infoadmin.module').then( m => m.InfoadminPageModule)
+  },  {
+    path: 'msnpublic',
+    loadChildren: () => import('./pages/msnpublic/msnpublic.module').then( m => m.MsnpublicPageModule)
+  },
+  {
+    path: 'messenger',
+    loadChildren: () => import('./pages/messenger/messenger.module').then( m => m.MessengerPageModule)
+  },
+  {
+    path: 'msnprivt',
+    loadChildren: () => import('./pages/msnprivt/msnprivt.module').then( m => m.MsnprivtPageModule)
   }
+
+
 
 
 

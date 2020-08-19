@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color="primary" >
+    <ion-icon name="arrow-back" slot="start" size="large"routerLink="/mensajes"></ion-icon>
+    <img class="avatar"  slot="end" src="\assets\icon\img\imagenlogo-Avatar.png"routerLink="/menucaseta">
+    <ion-title class="ion-text-center">Nuevo Mensaje Privado</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+  <div align="center">
+    <img src="\assets\icon\img\m.png">
+  </div>
+
+  <ion-card>
+    <ion-item style="color: rgb(134, 134, 134);"><ion-icon name="calendar" slot="start"></ion-icon>
+      <ion-label>Fecha y Hora</ion-label>
+      <ion-datetime displayFormat="D MMM YYYY H:mm" value="{{Fecha | date: 'yyyy-MM-dd'}}"></ion-datetime>
+    </ion-item>
+ 
+  <ion-item>
+    <ion-label position="floating" class=color>Domicilio</ion-label>
+  <ion-input color="light" type="text" ></ion-input>
+</ion-item>
+    <ion-item>
+      <ion-label class="color" position="floating"> Mensaje</ion-label>
+        <ion-textarea color="light"></ion-textarea>      
+    </ion-item>
+  </ion-card>
+
+<ion-card>
+  <ion-button class="text" expand="block" fill="outline" ><ion-icon color="success" name="send" slot="end"></ion-icon>Enviar</ion-button>
+</ion-card>
+
+</ion-content>

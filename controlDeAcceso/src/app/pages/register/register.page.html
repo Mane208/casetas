@@ -10,17 +10,24 @@
 <ion-content class="background">
 
   <ion-item>
+    <ion-label class="color" position="floating">Nombre de Usuario</ion-label>
+    <ion-input type="text" [(ngModel)]="users" required></ion-input>
+  </ion-item>
+
+  <ion-item>
     <ion-label class="color" position="floating">e-mail</ion-label>
-    <ion-input type="email" [(ngModel)]="user.email" required></ion-input>
+    <ion-input type="email" [(ngModel)]="email" required></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label class="color" position="floating">passwoed</ion-label>
-    <ion-input type="password" [(ngModel)]="user.password" required></ion-input>
+    <ion-input type="password" [(ngModel)]="password" required></ion-input>
   </ion-item>
 
   <ion-button class="ion-padding" color="primary" expand="full" 
-  (click)="register(user)">Registrar Usuario</ion-button>
+  (click)="onSubmitRegistro()">Registrar Usuario</ion-button>
+
+  
 
 </ion-content>
  

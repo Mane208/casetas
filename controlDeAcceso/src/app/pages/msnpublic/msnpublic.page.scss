@@ -1,0 +1,32 @@
+ion-label{
+    font-size: large;
+    
+    color: gray;
+}
+
+ion-label.color{
+    color: #f4f5f8;
+}
+ion-item.background{
+    --ion-background-color: rgb(15, 34, 88);
+}
+ion-content.background{
+    --ion-background-color: #000000 ;
+}
+
+ion-button.text{
+    color: whitesmoke;
+}
+
+ion-button{
+    
+--border-color: rgb(41, 216, 108);
+}
+
+img{
+    padding-top: 25px;
+}
+
+.avatar{
+    width: 10%;
+}       
