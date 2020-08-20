@@ -7,11 +7,32 @@
 </ion-header>
 
 <ion-content class="background">
-  <div align="center">
-    <img src="\assets\icon\img\m.png">
-  </div>
+ 
+  <div *ngFor="let message of messages">
+    <ion-card>
+     <ion-card-content>
+       <h2>Nombre: {{message.nombre}} </h2>
+       <h2>Mensaje: {{message.mensaje}}</h2>
+     </ion-card-content>
+   </ion-card>
+ </div>
+ 
+</ion-content>
 
-  <ion-card>
+<ion-footer class="background">
+  <ion-toolbar color="dark">
+    <ion-textarea placeholder="Mensaje" [(ngModel)]="message"></ion-textarea>
+    <ion-buttons slot="end" class="color">
+      <ion-button (click)="sendMessage()"> 
+        
+        <ion-icon color="success" name="send" ></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
+
+
+ <!-- <ion-card>
     <ion-item style="color: rgb(134, 134, 134);"><ion-icon name="calendar" slot="start"></ion-icon>
       <ion-label>Fecha y Hora</ion-label>
       <ion-datetime displayFormat="D MMM YYYY H:mm" value="{{Fecha | date: 'yyyy-MM-dd'}}"></ion-datetime>
@@ -26,9 +47,6 @@
         <ion-textarea color="light"></ion-textarea>      
     </ion-item>
   </ion-card>
-
 <ion-card>
   <ion-button class="text" expand="block" fill="outline" ><ion-icon color="success" name="send" slot="end"></ion-icon>Enviar</ion-button>
-</ion-card>
-
-</ion-content>
+</ion-card> -->
