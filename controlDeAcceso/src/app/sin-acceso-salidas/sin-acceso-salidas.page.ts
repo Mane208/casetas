@@ -13,6 +13,7 @@ export class SinAccesoSalidasPage implements OnInit {
 
   post = {} as Salidas;
   id: any;
+
   constructor(private actRoute: ActivatedRoute,
     private loadingCtrl: LoadingController,
     private firestore: AngularFirestore,
@@ -22,6 +23,7 @@ export class SinAccesoSalidasPage implements OnInit {
   ) {
     this.id = this.actRoute.snapshot.paramMap.get("id");
   }
+
 
   ngOnInit() {
     this.getPostById(this.id);
