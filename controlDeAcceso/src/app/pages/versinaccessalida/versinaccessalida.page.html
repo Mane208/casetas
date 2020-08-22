@@ -14,20 +14,15 @@
     </ion-row> 
   </ion-toolbar>
 </ion-header>
-<ion-content>
+<ion-content class="background">
 
-  <ion-list lines="none">
-    <ion-item-sliding *ngFor="let post of posts">
+  <ion-list >
+    
+    <ion-item-sliding *ngFor="let post of posts" >
       <ion-item class="no-padding" [routerLink]="['/sin-acceso-salidas', post.id]">
         <ion-label>
           <h2>nombre: {{ post.nombre }}</h2>
           <h2>domicilio: {{ post.domicilio }}</h2>
-          <h2>tipoacceso: {{ post.tipoacceso }}</h2>
-          <h2>obcervaciones: {{ post.obcesrvaciones }}</h2>
-          <h2>placas: {{ post.placas }}</h2>          
-          <h2>modoingreso: {{ post.modoingreso }}</h2>  
-          <h2>horaEntrada: {{ post.horaEntrada }}</h2>
-          <h2>horasalida: {{ post.horasalida }}</h2>
         </ion-label>
       </ion-item>
 
@@ -37,6 +32,7 @@
       </ion-item-option>
     </ion-item-options>
     </ion-item-sliding>
+
   </ion-list>
 
 </ion-content>
