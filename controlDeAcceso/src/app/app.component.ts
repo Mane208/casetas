@@ -13,6 +13,7 @@ import * as firebase from 'firebase';
   styleUrls: ['app.component.scss']
 })
 export class AppComponent {
+  splash = true;
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
@@ -25,7 +26,16 @@ export class AppComponent {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+      if(this.splash){
+        setTimeout(() =>{
+          setTimeout(()=>{
+            this.splash = false;
+          },5650);
+        },5300);
+      }
+
     });
     firebase.initializeApp(environment.FIREBASE_CONFIG);
+
   }
 }
