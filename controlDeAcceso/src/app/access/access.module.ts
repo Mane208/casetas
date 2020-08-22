@@ -7,9 +7,12 @@ import { IonicModule } from '@ionic/angular';
 import { AccessPageRoutingModule } from './access-routing.module';
 
 import { AccessPage } from './access.page';
+import { PipesModule } from '../pipes/pipes.module';
+
 
 @NgModule({
   imports: [
+    PipesModule,
     CommonModule,
     FormsModule,
     IonicModule,

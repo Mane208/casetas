@@ -7,9 +7,12 @@ import { IonicModule } from '@ionic/angular';
 import { SalidasPageRoutingModule } from './salidas-routing.module';
 
 import { SalidasPage } from './salidas.page';
+import { PipesModule } from '../pipes/pipes.module';
+
 
 @NgModule({
   imports: [
+    PipesModule,
     CommonModule,
     FormsModule,
     IonicModule,
