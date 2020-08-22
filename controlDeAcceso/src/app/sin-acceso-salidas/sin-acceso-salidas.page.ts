@@ -12,6 +12,7 @@ export class SinAccesoSalidasPage implements OnInit {
 
   post = {} as Salidas;
   id: any;
+  
   constructor(private toastCtrl: ToastController,
               private loadingCtrl: LoadingController,
               private navCtrl: NavController,
