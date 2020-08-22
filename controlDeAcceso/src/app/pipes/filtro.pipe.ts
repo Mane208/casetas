@@ -8,12 +8,12 @@ import { Salidas } from '../pages/models/salidas.model';
 export class FiltroPipe implements PipeTransform {
 
   transform(salidas: any[] , texto: string): Salidas[] {
-    // return null;
+   
     console.log(salidas);
-    if( texto === '' ){ return salidas;}
+    if ( texto.length === 0 ){ return salidas;}
     texto = texto.toLocaleLowerCase();
-    // console.log(texto) + " lo del filtro";
-    salidas.filter( item => {
+
+       return salidas.filter( item => {
       return item.nombre.toLocaleLowerCase().includes(texto);
     
     });

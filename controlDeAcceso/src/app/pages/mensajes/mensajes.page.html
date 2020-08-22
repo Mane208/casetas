@@ -1,4 +1,4 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar class="ion-text-center" color="primary">
     <img routerLink="/btn-inicio" slot="end" class="avatar" src="\assets\icon\img\imagenlogo-Avatar.png">
     <ion-icon slot="start" size="large"name="arrow-back"routerLink="/btn-inicio"></ion-icon>
@@ -11,7 +11,7 @@
     <img src="\assets\icon\img\m.png" >
   </div>
 
-<!-- <div *ngFor="let message of messages">
+<div *ngFor="let message of messages">
    <ion-card>
     <ion-card-content>
       <h2>Nombre: {{message.nombre}} </h2>
@@ -22,7 +22,7 @@
 
  
 
-  <ion-card align="center">
+  <!-- <ion-card align="center"> -->
     <!-- <ion-list lines="none">
       <ion-item-sliding>
         <ion-item class="no-padding">  
@@ -35,11 +35,11 @@
         </ion-item>        
       </ion-item-sliding>
     </ion-list> -->
-    <ion-button color="primary" fill="outline" routerLink="/msnpublic"><img src="\assets\icon\img\mal.png">
+    <!-- <ion-button color="primary" fill="outline" routerLink="/msnpublic"><img src="\assets\icon\img\mal.png">
           MENSAJES PUBLICO</ion-button>
   </ion-card>
   
-  <ion-card align="center">
+  <ion-card align="center"> -->
     <!-- <ion-list lines="none">
       <ion-item-sliding>
         <ion-item class="no-padding">  
@@ -53,8 +53,50 @@
         
       </ion-item-sliding>
     </ion-list> -->
-    <ion-button color="primary" fill="outline" routerLink="/messenger"><img src="\assets\icon\img\mal.png">
+    <!-- <ion-button color="primary" fill="outline" routerLink="/messenger"><img src="\assets\icon\img\mal.png">
           MENSAJES PRIVADO</ion-button>
   </ion-card>
 
-</ion-content>
+</ion-content> --> 
+
+<ion-header>
+  <ion-toolbar class="ion-text-center" color="primary"  > 
+    <img routerLink="/btn-inicio" slot="end" class="avatar" src="\assets\icon\img\imagenlogo-Avatar.png">
+    <ion-icon slot="start" size="large"name="arrow-back"routerLink="/btn-inicio"></ion-icon>
+
+    TIPOS DE MENSAJES
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding class="background"  [fullscreen]="true" align="center">
+  <ion-card id="conte" color="black"> 
+  
+    <ion-button  name="acceso"
+                 class="bord"
+                 size="medium"
+                 expand="block"
+                 [routerLink]="['/messenger']">                   
+    <div align="center">
+     <img src="\assets\icon\anadir-contacto.png">
+     <br>
+     <ion-label class="color" for="">privados</ion-label>
+    </div>
+    </ion-button>
+    <br>
+    <ion-button  name="acceso"
+    class="bordo"
+    size="medium"
+    expand="block"
+    [routerLink]="['/msnpublic']">                   
+    <div align="center">
+     <img src="\assets\icon\favoritos.png">
+     <br>
+     <ion-label class="color" for="">publicos </ion-label>
+    </div>
+    </ion-button>
+    
+    
+  </ion-card>
+  </ion-content>
+  

@@ -9,8 +9,13 @@ import { BuscarvisitasPageRoutingModule } from './buscarvisitas-routing.module';
 import { BuscarvisitasPage } from './buscarvisitas.page';
 import { ComponentsModule } from 'src/app/components/components.module';
 
+import { PipesModule } from '../../pipes/pipes.module';
+
+
+
 @NgModule({
   imports: [
+    PipesModule,
     CommonModule,
     FormsModule,
     IonicModule,

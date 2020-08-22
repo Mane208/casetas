@@ -76,6 +76,15 @@ if(!this.post.modoingreso){
   this.showToast("Porfavor Ingresa el modo de ingreso");
   return false;
 }
+
+if(!this.post.horaEntrada){
+  this.showToast("Porfavor Ingresa el modo de ingreso");
+  return false;
+}
+if(!this.post.horasalida){
+  this.showToast("Porfavor Ingresa el modo de ingreso");
+  return false;
+}
       return true;
     }
 

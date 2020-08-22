@@ -5,6 +5,8 @@ export interface Salidas {
     placas: string;
     obcesrvaciones : string; 
     modoingreso : string;
+    horaEntrada: string;
+    horasalida: string;
 
 
 }

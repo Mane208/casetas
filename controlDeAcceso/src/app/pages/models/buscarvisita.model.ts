@@ -1,4 +1,4 @@
-export interface datos{
+export interface Datos{
     claveAcceso: string;
     fechaHora: String; 
     tipo: string;

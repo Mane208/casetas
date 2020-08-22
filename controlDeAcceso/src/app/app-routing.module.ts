@@ -125,6 +125,18 @@ const routes: Routes = [
   {
     path: 'msnprivt',
     loadChildren: () => import('./pages/msnprivt/msnprivt.module').then( m => m.MsnprivtPageModule)
+  },
+  {
+    path: 'mensajes-siniestros',
+    loadChildren: () => import('./mensajes-siniestros/mensajes-siniestros.module').then( m => m.MensajesSiniestrosPageModule)
+  },
+  {
+    path: 'mensajes-policiacos',
+    loadChildren: () => import('./mensajes-policiacos/mensajes-policiacos.module').then( m => m.MensajesPoliciacosPageModule)
+  },
+  {
+    path: 'mensajes-medicos',
+    loadChildren: () => import('./mensajes-medicos/mensajes-medicos.module').then( m => m.MensajesMedicosPageModule)
   }
 
 
