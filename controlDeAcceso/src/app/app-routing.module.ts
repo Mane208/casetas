@@ -88,7 +88,7 @@ const routes: Routes = [
     loadChildren: () => import('./sos/sos.module').then( m => m.SosPageModule)
   },
   {
-    path: 'sin-acceso-salidas',
+    path: 'sin-acceso-salidas/:id',
     loadChildren: () => import('./sin-acceso-salidas/sin-acceso-salidas.module').then( m => m.SinAccesoSalidasPageModule)
   },
   {
@@ -114,7 +114,8 @@ const routes: Routes = [
   {
     path: 'infoadmin/:id',
     loadChildren: () => import('./infoadmin/infoadmin.module').then( m => m.InfoadminPageModule)
-  },  {
+  },
+  {
     path: 'msnpublic',
     loadChildren: () => import('./pages/msnpublic/msnpublic.module').then( m => m.MsnpublicPageModule)
   },
@@ -137,6 +138,10 @@ const routes: Routes = [
   {
     path: 'mensajes-medicos',
     loadChildren: () => import('./mensajes-medicos/mensajes-medicos.module').then( m => m.MensajesMedicosPageModule)
+  },
+  {
+    path: 'versinaccessalida',
+    loadChildren: () => import('./pages/versinaccessalida/versinaccessalida.module').then( m => m.VersinaccessalidaPageModule)
   }
 
 

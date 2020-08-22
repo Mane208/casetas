@@ -56,13 +56,13 @@
     </ion-item>
 
     <ion-item>
-      <ion-label class="color" position="floating">MODO DE INGRESO</ion-label>
+      <ion-label class="color" position="floating">HORA DE ENTRADA</ion-label>
       <ion-input [(ngModel)]="post.horaEntrada"></ion-input>
     </ion-item>
 
     <ion-item style="color: rgb(134, 134, 134);">
       <ion-label class="color" >Hora de Salida</ion-label>
-      <ion-datetime displayFormat=" H:mm"  [(ngModel)]="post.fecha" required >
+      <ion-datetime displayFormat=" H:mm"  [(ngModel)]="post.horasalida" required >
       </ion-datetime>
     </ion-item>
     
@@ -73,7 +73,7 @@
   <ion-button expand="block" 
               color="primary"
               fill="outline"
-              (click)="createPostSalidas(post)"><ion-icon slot="icon-only" name="person-add" color="success"></ion-icon>
+              (click)="updatePost(post)"><ion-icon slot="icon-only" name="person-add" color="success"></ion-icon>
               
               REGISTRAR</ion-button>
 
