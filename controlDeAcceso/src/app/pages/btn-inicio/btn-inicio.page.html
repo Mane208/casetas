@@ -3,7 +3,7 @@
 
 <ion-header mode="ios">
   <ion-toolbar id="grad" mode="ios">
-    <ion-icon id="grad" slot="end" name="power-sharp"  size="large"  style="color: rgb(255, 255, 255);" routerLink="/login"></ion-icon>
+    <ion-icon id="grad" slot="end" name="power-sharp"  size="large"  style="color: rgb(255, 255, 255);" (click)="cerrarSesion()"></ion-icon>
     <ion-title id="grad"  style="color: rgb(255, 255, 255);">CASETA</ion-title>
 
   </ion-toolbar>
@@ -51,10 +51,12 @@
 
 
 <ion-row class="top-4">
-  <ion-col size="6">
+  <ion-col size="6"   *ngIf="permisos !== 'condomino'">
     <ion-button  class="bordo"
+                
                  expand="block" 
                  routerLink="/mensajes" 
+                 
                  >
                  <div>
                   <img src="\assets\icon\img\mensaje-recibido.png">

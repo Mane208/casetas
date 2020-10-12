@@ -41,7 +41,7 @@
                 </div>
             </ion-button>            
             <br>
-            <ion-button routerLink="/noacceso" size="large" expand="block" 
+            <ion-button *ngIf="permisos !== 'condomino'" routerLink="/noacceso" size="large" expand="block" 
               id="verde">
                 <div>
                     <img src="\assets\icon\img\senal-de-stop.png">

@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
+import {environment} from '../../../environments/environment';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
 import { DataLocalService } from '../../services/data-local.service';
 
@@ -9,10 +9,20 @@ import { DataLocalService } from '../../services/data-local.service';
   templateUrl: './alertas.page.html',
   styleUrls: ['./alertas.page.scss'],
 })
-export class AlertasPage{
-
+export class AlertasPage implements OnInit{
+permisos: string;
   constructor(private barcodeScanner: BarcodeScanner,
     private dataLocal: DataLocalService) {}
+
+    ngOnInit() {
+      this.permisos = environment.tipo;
+      if(this.permisos === 'Condomino'){
+        console.log(true);
+      }else{
+        console.log(false);
+      }
+      console.log(typeof this.permisos);
+    }
 
 ionViewDidEnter(){
 console.log('viewDidEnter');

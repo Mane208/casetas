@@ -14,7 +14,12 @@ export const environment = {
     messagingSenderId: "525633067901",
     appId: "1:525633067901:web:3dcaf25a0f02b7dc24ca14"
 
-  } 
+  }, 
+  user: {
+  },
+
+  tipo: '',
+  token: ''
 };
 
 /*

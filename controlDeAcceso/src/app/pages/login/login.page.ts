@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../../services/auth.service';
+import { LoginService } from '../../services/login.service';
 import { ToastController, LoadingController, NavController } from '@ionic/angular';
 import { Router } from '@angular/router';
 
@@ -13,15 +13,13 @@ export class LoginPage implements OnInit {
   email: string;
   password: string;
 
-  constructor(private authService: AuthService, public router: Router){
+  constructor(public log:LoginService, public router: Router){
 
   }
 ngOnInit() { }
 
   onSubmit(){
-    this.authService.login(this.email, this.password).then(res => {
-      this.router.navigate(['btn-inicio/']);
-    }).catch(err => alert('Los datos nos son Correctos :( o el usuario no existe'))
+    this.log.login(this.email, this.password);
   }
 
 }
