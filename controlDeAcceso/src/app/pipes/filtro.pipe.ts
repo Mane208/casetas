@@ -14,8 +14,9 @@ export class FiltroPipe implements PipeTransform {
     texto = texto.toLocaleLowerCase();
 
        return salidas.filter( item => {
-      return item.domicilio.toLocaleLowerCase().includes(texto);
-      // item.nombre.toLocaleLowerCase().includes(texto)
+      return item.nombre.toLocaleLowerCase().includes(texto);
+     // item.domicilio.toLocaleLowerCase().includes(texto)
+       
       // || item.clave.toLocaleLowerCase().includes(texto)
        //item.domicilio.toLocaleLowerCase().includes(texto);
     
